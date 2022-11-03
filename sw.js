@@ -15,7 +15,7 @@ self.addEventListener('activate',(event)=>{
 
 self.addEventListener('fetch',(event)=>{
     if (event.request.url.includes('.jpg')) {
-        let resp = fetch('./images/gato2.jpg');
+        let resp = fetch("./images/gato2.jpg");
         event.respondWith(resp);
     }
 });
